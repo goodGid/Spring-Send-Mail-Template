@@ -1,0 +1,18 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: '사용하는 메일 주소'
+    password: '~_~' # src/main/resources의 PW1, PW2 이미지 참고
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+        smtps:
+          checkserveridentity: true
+          trust: '*'
